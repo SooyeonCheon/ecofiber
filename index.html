@@ -5,16 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ECO FIBER</title>
-
-    <link rel="icon" href="favicon1.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;900&family=Nunito:wght@900&family=Ubuntu&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    
     <script src="https://kit.fontawesome.com/0f63262170.js" crossorigin="anonymous"></script>
 </head>
 
@@ -23,20 +19,22 @@
 
     <!--------Navbar menu -------->
     <nav class="navbar">
-        <a class="navLogo" href="./index.html">ECO FIBER</a>
+        <a class="navLogo" href="./index.html"><img src="img/ecofiber-small-logo.png"></a>
         <div class="navMenu">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="pages/products.html">Products</a>
+                    <a class="nav-link" href="#about">ABOUT</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="pages/reality.html">Reality</a>
+                    <a class="nav-link" href="#products">PRODUCTS</a>
+                    <!-- item list, ppt application, customization -->
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="pages/aboutus.html">About us</a>
+                    <a class="nav-link" href="#process">PROCESS</a>
+                    <!-- process 사진 -->
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="pages/contact.html">Contact</a>
+                    <a class="nav-link" href="#contact">CONTACT</a>
                 </li>
             </ul>
             <a class="toggle-btn"><i class="fas fa-bars"></i></a>
@@ -48,136 +46,75 @@
         <div class="color"></div>
         <div class="header-left">
             <div class="content">
-                <div class="myname">Hi, my name is</div>
-                <div>Sooyeon Cheon.</div>
-
             </div>
         </div>
     </section>
 
     <!---------About---------->
     <section class="about" id="about">
-        <h1 class="about-header">ABOUT ME
+        <h1 class="about-header">ABOUT US
         </h1>
         <div class="about-content">
-            <div class="about-left">
-                <img src="img/photo.jpg" alt="photo">
-                <a class="resume" href="./CheonSooyeon_Resume.pdf">Resume<i class="far fa-file"></i></a>
-            </div>
             <div class="about-right">
-                I am a web developer who loves challenges and consistently strives to improve my technical
-                skills.<br><br>
-                Previously, I was a semiconductor engineer who became interested in computer programming. After moving
-                to Canada in July 2021, I have been studying for a Diploma in Web Development at Tamwood Career College.
-                <br><br>
-                Currently, I am looking for opportunities to apply my knowledge and experience to various businesses, so
-                that I can help the client to be more successful.
+                - ECO FIBER IS RECYCLED POLYESTER STAPLE FIBER DISTRIBUTOR IN CANADA<br><br>
+                - PARTNER WITH NO.1 COLOR FIBER PRODUCER IN KOREA<br><br>
+                - GLOBAL RECYCLED STANDARD (GRS) & OEKO-TEX STANDARD 100<br><br>
+                - SPECIALIZED IN AUTOMOTIVE INTERIOR MATERIALS
+            </div>
+            <div class="about-left">
+                <img src="img/about.png" alt="about">
+                <span class="location">Factory Location</span>
             </div>
         </div>
     </section>
 
-    <!---------Skills---------->
-    <section class="skills" id="skills">
-        <h1 class="skill-header">SKILLS
-            <p>Design and code interactive client-facing websites</p>
+    <!---------products---------->
+    <section class="products" id="products">
+        <h1 class="products-header">PRODUCTS
         </h1>
-        <div class="row">
-            <div class="col">
-                <ul>
-                    <li><i class="fas fa-check"></i>HTML</li>
-                    <li><i class="fas fa-check"></i>JAVASCRIPT</li>
-                    <li><i class="fas fa-check"></i>REACT</li>
-                    <li><i class="fas fa-check"></i>MYSQL</li>
-                </ul>
-            </div>
-            <div class="col">
-                <ul>
-                    <li><i class="fas fa-check"></i>CSS</li>
-                    <li><i class="fas fa-check"></i>JQUERY</li>
-                    <li><i class="fas fa-check"></i>BOOTSTRAP</li>
-                    <li><i class="fas fa-check"></i>GIT/GITHUB</li>
-                </ul>
-            </div>
-            <div class="col">
-                <ul>
-                    <li><i class="fas fa-check"></i>SASS</li>
-                    <li><i class="fas fa-check"></i>ANGULARJS</li>
-                    <li><i class="fas fa-check"></i>PHP</li>
-                    <li><i class="fas fa-check"></i>NODEJS</li>
-                </ul>
-            </div>
+        <div class="product1">
+            <p>ITEM LIST</p>
+            <img src="img/item.png">
+        </div>
+        <div class="product2">
+            <p>APPLICATION</p>
+            <img src="img/application.png">
+        </div>
+        <div class="product3">
+            <p>CUSTOMIZATION</p>
+            <img src="img/customization.png">
         </div>
     </section>
 
-    <!---------Works---------->
-    <section class="works" id="works">
-        <h1 class="work-header">WORKS
+    <!---------process---------->
+    <section class="process" id="process">
+        <h1 class="process-header">PROCESS
         </h1>
         <div class="row1">
             <div class="col1-left">
-                <img src="img/work-3.jpg">
-            </div>
-            <div class="col1-right">
-                <h3 class="work-title">Education Institution Dashboard</h3>
-                <p class="work-des">
-                    I created some database functionalities using PHP and MySQL. Dashboard has 3 types of users(admin,
-                    teacher, student) and they can login to their dashboard. Admin users are able to manage users,
-                    courses and appoint teachers into courses. Teacher users are able to add or edit marks/comments.
-                    Student users are able to enroll for a course and see their overall marks/comments and fees.
-                </p>
-                <div class="etc">
-                    <div><span>HTML</span><span>CSS</span><span>Javascript</span><span>PHP</span><span>MySQL</span>
-                    </div>
-                    <a href="https://sooyeoncheon.github.io/php-video/" target="_blank">VIEW VIDEO</a>
-                </div>
+                <img src="img/process.png">
             </div>
         </div>
-        <div class="row2">
-            <div class="col2-left">
-                <h3 class="work-title">Bakery Shopping Cart</h3>
-                <p class="work-des">
-                    I developed front-end with HTML, SASS, and CSS. I created bread menu and shopping cart
-                    functionalities with Javascript and angularJS. Customers can select bread type and quantity, and
-                    check total quantities and prices.
-                </p>
-                <div class="etc">
-                    <div><span>HTML</span><span>CSS</span><span>Javascript</span><span>AngluarJS</span></div>
-                    <a href="https://sooyeoncheon.github.io/bakery-page/" target="_blank">VIEW PAGE</a>
-                </div>
-            </div>
-            <div class="col2-right">
-                <img src="img/work-2.jpg">
-            </div>
-        </div>
-        <div class="row3">
-            <div class="col3-left">
-                <img src="img/work-1.jpg">
-            </div>
-            <div class="col3-right">
-                <h3 class="work-title">Rock Band Web Page</h3>
-                <p class="work-des">
-                    I developed front-end with HTML, SASS, and Bootstrap. Using Bootstrap, I built responsive design, carousel, and modal boxes. 
-                    I created validation for register/login forms with Javascript and jQuery. 
-                    And for version control, I used GitHub.
-                </p>
-                <div class="etc">
-                    <div><span>HTML</span><span>SASS</span><span>Bootstrap</span><span>Javascript</span><span>jQuery</span></div>
-                    <a href="https://sooyeoncheon.github.io/FinalProject-Sooyeon-202100505/" target="_blank">VIEW
-                        PAGE</a>
-                </div>
-            </div>
-        </div>
+        
 
     </section>
 
-    <!---------Footer---------->
-    <section class="footer">
-        <div>
-            ECO FIBER
-            <p>Mail. admin@ecofibersystem.com  T.778-123-4567</p>
-        </div>
-        <div class="copyright">
-            Copyright ⓒ Eco Fiber Co.,Ltd.
+    <!---------footer---------->
+    <section class="footer" id="contact">
+        <h1 class="contact-me">
+            CONTACT
+            <p>Feel free to contact me if you are interested in working with me.</p>
+        </h1>
+        <div class="sns">
+            <div>
+                Kyle Kim [Co-Founder]: <a href="mailto:kylekim@ecofibersystem.com">kylekim@ecofibersystem.com</a>
+            </div>
+            <div>
+                Tony Shen [Co-Founder]: <a href="mailto:sooyeoncheon.dev@gmail.com">tshen@ecofibersystem.com</a>
+            </div>
+            <div>
+                Jungsoo Kim [Co-Founder]: <a href="mailto:sooyeoncheon.dev@gmail.com">jkim@ecofibersystem.com</a>
+            </div>
         </div>
     </section>
 

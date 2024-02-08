@@ -1,5 +1,5 @@
 $maincolor: #2F4858;
-$logocolor: #d4f3ae;
+$logocolor: #dff3c6;
 $lightgreencolor: #04AA6D;
 $lightcolor: #f1f1e6;
 
@@ -7,14 +7,9 @@ $lightcolor: #f1f1e6;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: "Arial";
+  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   scroll-behavior: smooth;
-}
-body {
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
 }
 h1,
 h2,
@@ -39,11 +34,10 @@ h6 {
   }
 }
 
-
 /************ Navbar ************/
 
 .navbar {
-  padding: 1rem 5%;
+  padding: 0 5%;
   width: 100%;
   border: 3px solid $maincolor;
   background-color: white;
@@ -56,13 +50,9 @@ h6 {
   transition: 2s ease-in-out;
 
   .navLogo {
-    font-size: 2.5rem;
-    font-family: 'Lilita One', sans-serif;
-    color: $maincolor;
-    text-decoration: none;
-    transition: all 0.5s ease-in-out;
-    &:hover {
-      color: $lightgreencolor;
+    img {
+      width: 300px;
+      display: flex;
     }
   }
 
@@ -75,10 +65,10 @@ h6 {
       margin-left: 1.8rem;
       a {
         text-decoration: none;
+        color: $maincolor;
         transition: all 0.5s ease-in-out;
         cursor: pointer;
         font-weight: 500;
-        color: $maincolor;
         &::after {
           display: block;
           content: "";
@@ -113,7 +103,6 @@ h6 {
     color: $maincolor;
     &::after {
       border-bottom: 2px solid $lightgreencolor;
-      border-collapse: collapse;
     }
     &:hover {
       color: $lightgreencolor;
@@ -219,71 +208,28 @@ h6 {
     opacity: 1;
   }
 }
-@keyframes blink {
-  to {
-    opacity: 0;
-  }
-}
-@keyframes downmove {
-  from {
-    transform: translate(0, -30px);
-    opacity: 0;
-  }
-  to {
-    transform: translate(0, 0);
-    opacity: 1;
-  }
-}
 
 .header {
   width: 100%;
   height: 100vh;
-  padding: 2rem 13%;
   display: flex;
   place-items: center;
-  font-size: 3.3rem;
-  font-weight: 900;
-  color: white;
-  border: 3px solid $maincolor;
-  min-height: 800px;
+  min-height: 500px;
   animation: show 3s;
-  // background-image: url("../img/bg.jpeg");
+  background-image: url("../img/ecofiber-logo.png");
   z-index: 99;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  background-position: center;
   background-blend-mode: multiply;
-  background-color: $lightcolor;
+  background-color: $maincolor;
 
   .color {
     position: absolute;
   }
-  .header-left {
-    text-align: left;
-    animation: downmove 0.8s ease-in;
-    .myname {
-      font-size: 1.3rem;
-      color: $logocolor;
-      font-family: "Montserrat";
-      font-weight: 500;
-    }
-    div,
-    span {
-      text-align: left;
-      font-family: "Ubuntu";
-      margin: 1rem 0;
-    }
-    .text {
-      color: $lightcolor;
-    }
-  }
 }
 
-.blink {
-  animation: blink 0.5s infinite;
-  font-size: 2.5rem;
-  color: $logocolor;
-}
 
 // media query
 
@@ -321,10 +267,9 @@ h6 {
 
 .about {
   margin: auto;
-  padding: 6.5rem 15%;
+  padding: 6.5rem 12%;
   border: 3px solid $maincolor;
-  border-top: none;
-  min-height: 700px;
+
   .about-header {
     font-size: 2.8rem;
     color: $maincolor;
@@ -338,15 +283,32 @@ h6 {
   }
   .about-content {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+
+    .about-left {
+      width: 40%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       img {
-        width: 80%;
+        width: 85%;
         margin: auto;
       }
-      .imgs{
-        margin-bottom: 1rem;
+      .location {
+        margin: auto;
+        color: $maincolor;
+        margin-top: 1.3rem;
       }
+    }
+    .about-right {
+      width: 60%;
+      padding: 1.5rem;
+      margin: auto;
+      line-height: 1.5;
+      font-size: 1.1rem;
+      text-align: left;
+      color: gray;
+    }
   }
 }
 
@@ -374,51 +336,69 @@ h6 {
   }
 }
 
-/*********** Skills **********/
+/*********** products **********/
 
-.skills {
+.products {
   margin: auto;
   padding: 6.5rem 20%;
-  background-color: #f6f9f8;
+  background-color: white;
   border: 3px solid $maincolor;
   border-top: none;
-  .skill-header {
+  .products-header {
     font-size: 2.8rem;
     color: $maincolor;
     margin-bottom: 5rem;
+  }
+  .product1{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
     p {
-      font-size: 1.2rem;
-      font-weight: 500;
-      margin: 1rem;
+      margin-bottom: 3rem;
+      font-weight: bold;
       color: gray;
+      font-size: 1.5rem;
+    }
+    img {
+      width: 90%;
     }
   }
-  .row {
+  .product2 {
     display: flex;
-    justify-content: center;
-    .col {
-      padding-left: 7%;
-      flex-basis: 30%;
-      font-weight: 500;
-      font-size: 1.1rem;
-      min-width: 210px;
-      li {
-        list-style: none;
-        text-align: left;
-        line-height: 2;
-        i {
-          margin-right: 1rem;
-          color: $maincolor;
-        }
-      }
+    flex-direction: column;
+    place-items: center;
+    p {
+      margin: 5rem 0 3rem 0;
+      font-weight: bold;
+      color: gray;
+      font-size: 1.5rem;
+
+    }
+    img {
+      width: 90%;
+    }
+  }
+  .product3 {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    p {
+      margin: 5rem 0 3rem 0;
+      font-weight: bold;
+      color: gray;
+      font-size: 1.5rem;
+
+    }
+    img {
+      width: 90%;
     }
   }
 }
 
 @media screen and (max-width: 768px) {
-  .skills {
+  .products {
     padding: 6rem 10%;
-    .row {
+    .product1, .product2, .roduct3 {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -427,91 +407,63 @@ h6 {
   }
 }
 
-/*********** Works **********/
-.works {
+/*********** process **********/
+.process {
   margin: auto;
   padding: 6.5rem 2rem;
   border: 3px solid $maincolor;
   border-top: none;
-  .work-header {
+  .process-header {
     font-size: 2.8rem;
     color: $maincolor;
     margin-bottom: 4rem;
   }
 
-  .row1,
-  .row2,
-  .row3 {
-    display: grid;
-    justify-content: center;
+  .row1{
     place-items: center;
     align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
-    grid-gap: 10%;
     padding: 4rem 0;
-    text-align: left;
     img {
-      width: 100%;
+      width: 70%;
     }
-    .work-title {
-      text-align: left;
-      color: gray;
-      font-size: 1.5rem;
-    }
-    .work-des {
-      text-align: left;
-      margin: 1rem 0;
-      line-height: 1.4;
-    }
-    .etc {
-      text-align: left;
-      width: 100%;
-      margin: 0;
-      div {
-        margin: 0 0 1rem 0;
-        text-align: left;
-      }
-      span {
-        color: gray;
-        font-size: 0.85rem;
-        padding: 0.2rem 0.3rem;
-        margin-right: 0.3rem;
-        border: 1px solid gray;
-        border-radius: 30px;
-      }
-      a {
-        margin-left: 0.3rem;
-        color: gray;
-        font-size: 0.9rem;
-        transition: 0.4s ease-in;
-        font-weight: 600;
-        &:hover {
-          color: $maincolor;
-        }
-      }
-    }
+    
   }
 }
 
 /*********** Footer **********/
 
 .footer {
-  background-color: lightgray;
+  background-color: $maincolor;
   margin: auto;
-  padding: 2rem 20%;
+  padding: 3rem 20%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 3px solid $maincolor;
-  border-top: none;
-  div {
+  .contact-me {
+    font-size: 2.8rem;
+    color: white;
     p {
-      margin: 1rem 0;
-      font-size: 0.9rem;
+      font-size: 1rem;
+      font-weight: 400;
+      margin-top: 2rem;
     }
   }
-  .copyright {
-    font-size: 0.8rem;
+  .sns {
+    font-size: 1rem;
+    margin-top: 2rem;
+    div {
+      margin: 0.5rem;
+    }
+    a {
+      color: $logocolor;
+      text-decoration: none;
+      margin: 0.6rem;
+      cursor: pointer;
+      transition: 0.3s;
+      &:hover {
+        color: #ff8a43;
+      }
+    }
   }
 }
 
@@ -523,51 +475,53 @@ h6 {
 
 //scroll effect
 
-// .about-header,
-// .skill-header,
-// .work-header,
-// .contact-me {
-//   opacity: 0;
-//   transform: translateY(50px);
-//   transition: all 0.8s ease-in-out;
-// }
-// .about-left,
-// .row,
-// .col1-left,
-// .col2-left,
-// .col3-left {
-//   opacity: 0;
-//   transform: translateX(-50px);
-//   transition: all 0.8s ease-in-out;
-// }
-// .about-right,
-// .col1-right,
-// .col2-right,
-// .col3-right {
-//   opacity: 0;
-//   transform: translateX(50px);
-//   transition: all 0.8s ease-in-out;
-// }
-// .sns {
-//   opacity: 0;
-//   transform: scale(0);
-//   transition: all 0.8s ease-in-out;
-// }
+.about-header,
+.products-header,
+.process-header,
+.contact-me {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-in-out;
+}
+.about-left,
+.product1,
+.product2,
+.product3,
+.col1-left,
+.col2-left,
+.col3-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.8s ease-in-out;
+}
+.about-right,
+.col1-right,
+.col2-right,
+.col3-right {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: all 0.8s ease-in-out;
+}
+.sns {
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.8s ease-in-out;
+}
 
-// // scroll effect class
-// .active-up {
-//   opacity: 1;
-//   transform: translateY(0);
-// }
-// .active-right {
-//   opacity: 1;
-//   transform: translateX(0);
-// }
-// .active-scale {
-//   opacity: 1;
-//   transform: scale(1);
-// }
+// scroll effect class
+.active-up {
+  opacity: 1;
+  transform: translateY(0);
+}
+.active-right {
+  opacity: 1;
+  transform: translateX(0);
+}
+.active-scale {
+  opacity: 1;
+  transform: scale(1);
+}
 
-// .nav-scroll .navMenu ul li a.clicked {
-//   color: $lightgreencolor;
-// }
+.nav-scroll .navMenu ul li a.clicked {
+  color: $lightgreencolor;
+}
