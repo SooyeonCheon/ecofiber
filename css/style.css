@@ -289,7 +289,7 @@ h6 {
     flex-direction: column;
   }
   .about .about-content .about-left {
-    width: 70%;
+    width: 80%;
     margin: auto;
   }
   .about .about-content .about-left img {
@@ -390,7 +390,7 @@ h6 {
   padding: 4rem 0;
 }
 .process .row1 img {
-  width: 70%;
+  width: 90%;
 }
 
 /*********** Footer **********/
