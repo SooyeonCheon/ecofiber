@@ -110,11 +110,12 @@ h6 {
 
 .toggle-btn {
   display: none;
-  color: #f1f1e6;
+  color: #2F4858;
   font-size: 2rem;
   position: absolute;
-  top: 0;
+  top: 0.8rem;
   right: 32px;
+  place-items: center;
 }
 
 @media screen and (max-width: 992px) {
@@ -156,7 +157,7 @@ h6 {
   }
   .navbar .toggle-btn:hover {
     cursor: pointer;
-    color: #dff3c6;
+    color: #2F4858;
   }
   .navMenu ul.toggle {
     display: flex;

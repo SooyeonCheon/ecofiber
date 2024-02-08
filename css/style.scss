@@ -120,11 +120,13 @@ h6 {
 
 .toggle-btn {
   display: none;
-  color: $lightcolor;
+  color: $maincolor;
   font-size: 2rem;
   position: absolute;
-  top: 0;
+  top: 0.8rem;
   right: 32px;
+  // border: 1px solid red;
+  place-items: center;
 }
 
 // media query
@@ -166,7 +168,7 @@ h6 {
       transition: 0.5s ease-in-out;
       &:hover {
         cursor: pointer;
-        color: $logocolor;
+        color: $maincolor;
       }
     }
   }
