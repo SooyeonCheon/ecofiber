@@ -137,14 +137,12 @@ h6 {
   .navbar .navMenu ul {
     display: none;
     flex-direction: column;
-    background-color: white;
     border-bottom: 0.8px solid lightgray;
     transition: 5s;
   }
   .navbar .navMenu ul li {
     width: 100vw;
     text-align: center;
-    background-color: white;
     margin-left: 0;
   }
   .navbar .navMenu ul li a {
