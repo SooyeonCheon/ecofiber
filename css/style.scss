@@ -303,10 +303,11 @@ h6 {
 
 @media screen and (max-width: 992px) {
   .about {
+    padding: 5rem 5%;
     .about-content {
       flex-direction: column;
       .about-left {
-        width: 80%;
+        width: 90%;
         margin: auto;
         img {
           width: 100%;
@@ -314,10 +315,11 @@ h6 {
       }
       .about-right {
         width: 100%;
-        padding: 2rem;
+        padding: 0;
+        padding-bottom: 2rem;
         margin: auto;
         line-height: 1.5;
-        font-size: 1.1rem;
+        font-size: 1rem;
         text-align: left;
         color: gray;
       }
@@ -444,15 +446,34 @@ h6 {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .products {
-    padding: 6rem 10%;
+    padding: 5rem 5%;
     .product1, .product2, .product3, .product4 {
       display: flex;
       flex-direction: column;
       justify-content: center;
       place-items: center;
     }
+    .product1 {
+      .fiber-content {
+        display: flex;
+        flex-direction: column;
+        .img-content {
+          width: 60%;
+          margin: 0 0 2rem 0;
+        }
+      }
+    }
+    .product3 {
+      .text-content {
+        text-align: left;
+        .application {
+            text-align: left;
+        }
+      }
+    }
+    
   }
 }
 
@@ -490,6 +511,22 @@ h6 {
       margin-top: 3.5rem;
     }
     
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .process {
+    padding: 5rem 5%;
+    .row1{
+      .process-content {
+        width: 100%;
+        text-align: left;
+      }
+      img {
+        width: 100%;
+      }
+      
+    }
   }
 }
 

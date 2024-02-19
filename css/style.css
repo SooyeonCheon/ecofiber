@@ -269,11 +269,14 @@ h6 {
 }
 
 @media screen and (max-width: 992px) {
+  .about {
+    padding: 5rem 5%;
+  }
   .about .about-content {
     flex-direction: column;
   }
   .about .about-content .about-left {
-    width: 80%;
+    width: 90%;
     margin: auto;
   }
   .about .about-content .about-left img {
@@ -281,10 +284,11 @@ h6 {
   }
   .about .about-content .about-right {
     width: 100%;
-    padding: 2rem;
+    padding: 0;
+    padding-bottom: 2rem;
     margin: auto;
     line-height: 1.5;
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-align: left;
     color: gray;
   }
@@ -403,15 +407,29 @@ h6 {
   width: 90%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .products {
-    padding: 6rem 10%;
+    padding: 5rem 5%;
   }
   .products .product1, .products .product2, .products .product3, .products .product4 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     place-items: center;
+  }
+  .products .product1 .fiber-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .products .product1 .fiber-content .img-content {
+    width: 60%;
+    margin: 0 0 2rem 0;
+  }
+  .products .product3 .text-content {
+    text-align: left;
+  }
+  .products .product3 .text-content .application {
+    text-align: left;
   }
 }
 /*********** process **********/
@@ -450,6 +468,18 @@ h6 {
   margin-top: 3.5rem;
 }
 
+@media screen and (max-width: 992px) {
+  .process {
+    padding: 5rem 5%;
+  }
+  .process .row1 .process-content {
+    width: 100%;
+    text-align: left;
+  }
+  .process .row1 img {
+    width: 100%;
+  }
+}
 /*********** Footer **********/
 .footer {
   background-color: #2F4858;
