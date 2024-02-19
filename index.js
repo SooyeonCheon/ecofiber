@@ -146,7 +146,18 @@ window.addEventListener("scroll", function () {
 });
 
 window.addEventListener("scroll", function () {
-  let content = document.querySelector(".col1-left");
+  let content = document.querySelector(".product4");
+  let contentPosition = content.getBoundingClientRect().top;
+  let screenPosition = window.innerHeight / 1.3;
+  if (contentPosition < screenPosition) {
+    content.classList.add("active-right");
+  } else {
+    content.classList.remove("active-right");
+  }
+});
+
+window.addEventListener("scroll", function () {
+  let content = document.querySelector(".row1");
   let contentPosition = content.getBoundingClientRect().top;
   let screenPosition = window.innerHeight / 1.2;
   if (contentPosition < screenPosition) {
@@ -156,57 +167,6 @@ window.addEventListener("scroll", function () {
   }
 });
 
-window.addEventListener("scroll", function () {
-  let content = document.querySelector(".col1-right");
-  let contentPosition = content.getBoundingClientRect().top;
-  let screenPosition = window.innerHeight / 1.6;
-  if (contentPosition < screenPosition) {
-    content.classList.add("active-right");
-  } else {
-    content.classList.remove("active-right");
-  }
-});
-window.addEventListener("scroll", function () {
-  let content = document.querySelector(".col2-left");
-  let contentPosition = content.getBoundingClientRect().top;
-  let screenPosition = window.innerHeight / 1.2;
-  if (contentPosition < screenPosition) {
-    content.classList.add("active-right");
-  } else {
-    content.classList.remove("active-right");
-  }
-});
-window.addEventListener("scroll", function () {
-  let content = document.querySelector(".col2-right");
-  let contentPosition = content.getBoundingClientRect().top;
-  let screenPosition = window.innerHeight / 1.6;
-  if (contentPosition < screenPosition) {
-    content.classList.add("active-right");
-  } else {
-    content.classList.remove("active-right");
-  }
-});
-
-window.addEventListener("scroll", function () {
-  let content = document.querySelector(".col3-left");
-  let contentPosition = content.getBoundingClientRect().top;
-  let screenPosition = window.innerHeight / 1.2;
-  if (contentPosition < screenPosition) {
-    content.classList.add("active-right");
-  } else {
-    content.classList.remove("active-right");
-  }
-});
-window.addEventListener("scroll", function () {
-  let content = document.querySelector(".col3-right");
-  let contentPosition = content.getBoundingClientRect().top;
-  let screenPosition = window.innerHeight / 1.6;
-  if (contentPosition < screenPosition) {
-    content.classList.add("active-right");
-  } else {
-    content.classList.remove("active-right");
-  }
-});
 
 window.addEventListener("scroll", function () {
   let content = document.querySelector(".sns");
