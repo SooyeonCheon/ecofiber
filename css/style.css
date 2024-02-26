@@ -532,9 +532,40 @@ h6 {
   min-height: 230px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .footer {
+    flex-direction: column;
     padding: 3rem 10%;
+  }
+  .footer .contact-1 {
+    width: 100%;
+  }
+  .footer .contact-1 img {
+    width: 50%;
+  }
+  .footer .contact-1 p {
+    text-align: left;
+    margin: 0.5rem 0 0 0;
+    letter-spacing: 1px;
+  }
+  .footer .contact-2 {
+    width: 100%;
+    margin-top: 3rem;
+  }
+  .footer .contact-2 div {
+    margin-top: 1rem;
+    letter-spacing: 1px;
+  }
+  .footer .contact-2 div p {
+    margin-top: 0.5rem;
+  }
+  .footer .contact-3 {
+    width: 100%;
+    margin-top: 3rem;
+  }
+  .footer .contact-3 iframe {
+    width: 90%;
+    min-height: 250px;
   }
 }
 .about-header,
