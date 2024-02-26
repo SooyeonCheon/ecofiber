@@ -535,36 +535,78 @@ h6 {
 .footer {
   background-color: $maincolor;
   margin: auto;
-  padding: 3rem 20%;
+  padding: 5rem 10%;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  .contact-me {
-    font-size: 2.8rem;
-    color: white;
+  justify-content: center;
+  color: white;
+  .contact-1 {
+    width: 33%;
+    text-align: left;
+    img {
+      width: 70%;
+    }
     p {
-      font-size: 1rem;
-      font-weight: 400;
-      margin-top: 2rem;
-    }
-  }
-  .sns {
-    font-size: 1rem;
-    margin-top: 2rem;
-    div {
-      margin: 0.5rem;
-    }
-    a {
-      color: $logocolor;
-      text-decoration: none;
-      margin: 0.6rem;
-      cursor: pointer;
-      transition: 0.3s;
-      &:hover {
-        color: #ff8a43;
+      text-align: left;
+      margin: 1rem 0 0 1rem;
+      letter-spacing: 2px;
+      a, a:hover, a:focus, a:active {
+        text-decoration: none;
+        color: inherit;
+      }
+      a:hover {
+        color: blue;
       }
     }
   }
+  .contact-2 {
+    width: 33%;
+    text-align: left;
+    h1 {
+      text-align: left;
+    }
+    div {
+      margin-top: 2rem;
+      letter-spacing: 1.5px;
+      p {
+        text-align: left;
+        margin-top: 1rem;
+      }
+    }
+  }
+  .contact-3 {
+    width: 33%;
+    text-align: left;
+    iframe {
+      width: 90%;
+      min-height: 230px;
+    }
+  }
+  // .contact-me {
+  //   font-size: 2.8rem;
+  //   color: white;
+  //   p {
+  //     font-size: 1rem;
+  //     font-weight: 400;
+  //     margin-top: 2rem;
+  //   }
+  // }
+  // .sns {
+  //   font-size: 1rem;
+  //   margin-top: 2rem;
+  //   div {
+  //     margin: 0.5rem;
+  //   }
+  //   a {
+  //     color: $logocolor;
+  //     text-decoration: none;
+  //     margin: 0.6rem;
+  //     cursor: pointer;
+  //     transition: 0.3s;
+  //     &:hover {
+  //       color: #ff8a43;
+  //     }
+  //   }
+  // }
 }
 
 @media screen and (max-width: 768px) {
