@@ -564,7 +564,7 @@ h6 {
     margin-top: 3rem;
   }
   .footer .contact-3 iframe {
-    width: 90%;
+    width: 100%;
     min-height: 250px;
   }
 }
